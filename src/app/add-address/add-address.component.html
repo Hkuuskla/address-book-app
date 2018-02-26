@@ -1,0 +1,24 @@
+<div class="add-address-container" >
+  <mat-form-field>
+    <input matInput placeholder="Ettevõte" [(ngModel)]="contact.company"/>
+
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Riik" [(ngModel)]="contact.country"/>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Linn" [(ngModel)]="contact.city"/>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Aadress" [(ngModel)]="contact.address"/>
+  </mat-form-field>
+  
+</div>
+
+<button mat-mini-fab (click)="addContact()"><i class="material-icons">edit</i></button>
+<button mat-mini-fab (click)="cancel()"><i class="material-icons">close</i></button>
+
+

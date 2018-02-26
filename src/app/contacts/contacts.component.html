@@ -1,0 +1,30 @@
+
+
+<div>
+  <mat-card *ngFor="let contact of contacts$ | async">
+    <mat-card-content>
+      Ettevõte: {{contact.company | async}}
+    </mat-card-content>
+    <mat-card-content>
+      Riik: {{contact.country | async }}
+    </mat-card-content>
+    <mat-card-content>
+      Linn: {{contact.city | async}}
+    </mat-card-content>
+    <mat-card-content>
+      Aadress: {{contact.address | async}}
+    </mat-card-content>
+
+    <button mat-mini-fab color="primary" class="edit" title="edit contact"
+      (click)="edit()"><i class="material-icons">mode_edit</i></button>
+
+    <button mat-mini-fab color="primary" class="delete" title="delete contact"
+      (click)="delete()"><i class="material-icons">delete</i></button>
+
+  </mat-card>
+  
+
+ 
+  
+</div>
+

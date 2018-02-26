@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-nav-list >
+      <a mat-list-item routerLink="/contacts/city/{{city}}" *ngFor="let city of cityList$ | async; last as last"> 
+        <h4 mat-line>{{ city }}</h4> 
+        <mat-divider *ngIf="!last"></mat-divider>
+      </a>
+  
+   </mat-nav-list>    
+</mat-card>
+
